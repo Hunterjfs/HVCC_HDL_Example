@@ -16,10 +16,10 @@ module tt_um_Hunterjfs (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-reg [3:0] a;
-assign a = ui_in[7:4];
-reg [3:0] b;
-assign b = ui_in[3:0];
+reg [7:0] a;
+assign a = {4'b0000 ,ui_in[7:4];
+reg [7:0] b;
+assign b = { 4'b0000 ,ui_in[3:0];
 reg [2:0] aluOp;
 assign aluOp = uio_in[2:0];
 
@@ -66,6 +66,10 @@ always @(posedge clk) begin
      3'b101: begin
       assign result = a / b;
       
+     end
+
+     default: begin
+     result = 0;
      end
     endcase
     
