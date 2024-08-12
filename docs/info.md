@@ -9,12 +9,21 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Takes in two 4 bit numbers and performs a logical operation between them.
+
+Control for uio to choose performed operation:
+0 = and
+1 = odd
+2 = add
+3 = subtract
+4 = multiply
+5 = divide
+
 
 ## How to test
+Use test.py
 
-Explain how to use your project
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None
