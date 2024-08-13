@@ -27,7 +27,7 @@ assign aluOp = uio_in[2:0];
 
  reg [7:0] result;
  assign uo_out = result;
-
+assign uio_out = 0;
 always @(posedge clk) begin
     /*case (aluOp) 
       3'b000: result <= a + b;
@@ -78,6 +78,6 @@ end
  
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, rst_n, uio_in[7:3], uio_out[7:0]};
+  wire _unused = &{ena, rst_n, uio_in[7:3]};
 
 endmodule
