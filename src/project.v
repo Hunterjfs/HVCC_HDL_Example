@@ -17,9 +17,9 @@ module tt_um_Hunterjfs (
 );
 
 reg [7:0] a;
-assign a = {4'b0000 ,ui_in[7:4];
+assign a = {4'b0000 ,ui_in[7:4] };
 reg [7:0] b;
-assign b = { 4'b0000 ,ui_in[3:0];
+assign b = { 4'b0000 ,ui_in[3:0]};
 reg [2:0] aluOp;
 assign aluOp = uio_in[2:0];
 
