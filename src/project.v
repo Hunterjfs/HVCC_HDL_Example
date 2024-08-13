@@ -43,28 +43,28 @@ always @(posedge clk) begin
     case (aluOp) 
       //AND Case
       3'b000: begin
-      assign result = a & b;
+       result = a & b;
       end
     //OR Case
     3'b001: begin
-      assign result = a | b;
+       result = a | b;
     end
     
     //Add Case
     3'b010: begin
-      assign result = a + b;
+       result = a + b;
     end
     //Subtract Case a-b
     3'b011: begin
-      assign result = a - b;
+       result = a - b;
     end
     //Multiply Case a*b
      3'b100: begin
-      assign result = a * b;
+       result = a * b;
      end
      //Divide Case a/b
      3'b101: begin
-      assign result = a / b;
+       result = a / b;
       
      end
 
