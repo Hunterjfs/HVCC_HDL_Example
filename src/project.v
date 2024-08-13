@@ -70,7 +70,7 @@ always @(posedge clk) begin
      end
 
      default: begin
-     result = 0;
+     result <= 0;
      end
     endcase
     
